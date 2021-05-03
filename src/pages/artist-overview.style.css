@@ -1,0 +1,84 @@
+.gridMode{
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 10vh;
+}
+.gridMode .contentGridElement{
+    width: calc(33.333%);
+    height: auto;
+    margin: 3vw 0px;
+}
+.gridMode .contentGridImageWrapper{
+    display:block;
+    height: calc(100% - 5em);
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-bottom: 80%;
+}
+.gridMode .contentGridElementCaption{
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-size:inherit;
+    margin-left:0;
+}
+
+.listMode{
+    width:66vw;
+    padding-top: calc(140px + 20vh);
+    float:left;
+    padding-bottom:100px;
+}
+.listMode .contentGridElement{
+    width:100%;
+    margin:0;
+}
+.listMode .contentGridImageWrapper{
+display:none;
+}
+.listMode .contentGridElementCaption{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-left:0;
+}
+
+.toggleButtonContainer{
+    position: relative;
+    float: right;
+    width: 33vw;
+    display: flex;
+justify-content: center;
+margin-top:140px;
+   }
+   .toggleButton{
+       cursor:pointer;
+       margin: 0px 6px;
+   }
+
+   .toggleButton:hover{
+       color:black;
+   }
+
+@media screen and (max-width:1000px){
+    .toggleButtonContainer{
+        width:100%;
+        margin-top:20px;
+    }
+    .gridMode .contentGridElement{
+        width:50%;
+    }
+    .listMode{
+        width: 100%;
+        padding-top: 80px;
+    }
+}
